@@ -1,0 +1,26 @@
+JS CONCEPTUALIZER
+=================
+
+JS Conceptualizer provides client-side Javascript that parses out concepts, particularly proper nouns, from HTML on a web page. Most of this logic is from the old Cruxlux.com bookmarklet and the remainder was tried in the wild at Kosmix (which was acquired by Walmart in May 2010).
+
+
+CODE
+----
+The Javascript is broken into separate files by functionality, and you can combine them using your favorite asset system (bc.js is an example). The first step, identifying the portions of a page with the main content, is provided by zoner.js, site_rules_zoner.js, and site_rules.js (hard-coded rules based on CSS). CSS-selection is done by Sly (http://sly.digitarald.com, Copyright 2009 Harald Kirschner, MIT License), included here for convenience. The second step, of finding concepts within a block of text, is done by tagger.js. api_renderer.js can be used to insert icons next to parsed out concepts, either for dubgging or for end-user facing display if your application requires it. We also provide an extension harnesses to demonstrate how you can implement browser extensions that "conceptualize," within the extension_harnesses directory. The skeletal extension communicates with the page-level Javascript using events, particularly transport.js for networking.
+
+
+LICENSE
+-------
+@WalmartLabs is releasing this under an MIT License, a copy of which is also included at the top level of the source tree.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+CONTRIBUTORS
+------------
+Guha Jayachandran, @guha
+Curtis Spencer, @jubos

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://conceptualizercontextual/locale/options.dtd">
+
+<prefwindow id="everywhere-prefs"
+     title="&options_window_title;"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <prefpane id="everywhere-prefs-pane" label="&options_window_title;" maxwidth='600px' >
+		
+		<button label="Enable Apps" oncommand="window.open('http://dev002.sj.conceptualizer.com:1984/store/options.html');"/>
+
+
+    <preferences>
+      <preference id="pref_oot_enabled" name="extensions.conceptualizercontextual.oot_enabled" type="bool"/>
+      <preference id="pref_blacklist" name="extensions.conceptualizercontextual.blacklist" type="string"/>
+    </preferences>
+
+    <checkbox label="&enable_notifications.label;" preference="pref_oot_enabled"/>
+    <description style='font-size: 85%; color:#333333; padding-left: 10px'>
+      &notification_instructions;
+    </description>
+
+    <separator spacing="20px" bar="false" />
+
+    <vbox minheight='300px'>
+      <label control="blacklist" value="&blacklist.label;"/>
+      <description style='font-size: 85%; color:#333333; padding-left: 10px'>
+        &blacklist_instructions;
+      </description>
+      <listbox id='blacklist_listbox' rows='5'>
+      </listbox>
+      <hbox align='center'>
+        <label control="blacklist_input" value='&blacklist_input.label;'/>
+        <textbox id="blacklist_input" maxlength="100"/>
+        <button id='blacklist_input_button' label='&blacklist_add.label;' accesskey='A' disabled='false' />
+        <button id='blacklist_remove_button' label='&blacklist_remove.label;' accesskey='R' disabled='false' />
+      </hbox>
+    </vbox>
+  </prefpane>
+
+  <script type='application/javascript' src="chrome://conceptualizercontextual/content/logger.js"/>
+  <script type='application/javascript' src="chrome://conceptualizercontextual/content/blacklist.js"/>
+  <script type='application/javascript' src="chrome://conceptualizercontextual/content/options.js"/>
+</prefwindow>

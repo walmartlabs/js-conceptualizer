@@ -1,0 +1,5 @@
+content     conceptualizercontextual chrome/content/
+
+locale conceptualizercontextual en-US chrome/locale/en-US/
+
+overlay chrome://browser/content/browser.xul chrome://conceptualizercontextual/content/contextual.xul

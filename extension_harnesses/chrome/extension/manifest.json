@@ -1,0 +1,12 @@
+{
+  "name": "Conceptualizer Contextual Engine",
+  "version": "0.0.0.0",
+  "description": "Watch for emblems inserted into the text and mouse over them to see conceptualizer updates from that service",
+  "background_page": "background.html",
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

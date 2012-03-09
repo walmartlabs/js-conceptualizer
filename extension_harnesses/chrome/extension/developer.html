@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link id='bespin_base' href='js/bespin'/>
+    <link href="js/bespin/BespinEmbedded.css" type="text/css" rel="stylesheet">
+    <script type='text/javascript' src='js/bespin/BespinEmbedded.js'></script>
+    <script type='text/javascript' src='js/developer.js'></script>
+    <style type='text/css'>
+      body { padding: 20px; font-family: Calibri, Helvetica, Arial; }
+      h1 { border-bottom: 1px solid #ddd; font-size:120%; }
+      #editor { margin: 0; padding: 0; border: 0; height: 600px; }
+      /*.editor { margin: 0; padding: 0; border: 0; border: 10px solid #ddd; -moz-border-radius: 10px; -webkit-border-radius: 10px; } */
+      .displaybutton { margin-top: 1em; }
+    </style>
+  </head>
+  <body>
+    <h1>Conceptualizer Contextual Developer</h1>
+    <div class='bespin' id='editor'>
+    </div>
+    <p><a href='developer.html'>Develop your own contextual app</a></p>
+    <script>
+      window.onBespinLoad = function() {
+        ConceptualizerDeveloper.init();
+      };
+    </script>
+  </body>
+</html>

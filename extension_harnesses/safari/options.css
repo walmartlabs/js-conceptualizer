@@ -1,0 +1,22 @@
+<style type='text/css'>
+  body { padding: 20px; font-family: Calibri, Helvetica, Arial; }
+  h1 { border-bottom: 1px solid #ddd; font-size:120%; }
+  #editor { margin: 0; padding: 0; border: 0; height: 600px; }
+  /*.editor { margin: 0; padding: 0; border: 0; border: 10px solid #ddd; -moz-border-radius: 10px; -webkit-border-radius: 10px; } */
+  .displaybutton { margin-top: 1em; }
+  .app {
+    -webkit-border-radius: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .enabled_app {
+    -webkit-border-radius: 10px;
+    background-color: #00ffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin: 10px;
+  }
+</style>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://conceptualizercontextual/locale/contextual.dtd">
+
+<overlay id="conceptualizercontextual" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="logger.js"/>
+  <script type="application/x-javascript" src="utils.js"/>
+  <script type="application/x-javascript" src="storage.js"/>
+  <script type="application/x-javascript" src="blacklist.js"/>
+  <script type="application/x-javascript" src="tag_blacklist.js"/>
+  <script type="application/x-javascript" src="conceptualizer_connect.js"/>
+  <script type="application/x-javascript" src="contextual.js"/>
+  <script type="application/x-javascript" src="options.js"/>
+  <script type="application/x-javascript" src="conceptualizer.js"/>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="everywhere-panel"
+		class="statusbarpanel-menu-iconic"
+		src="chrome://conceptualizerconetxtual/content/logo-16x16.png"
+    popup="everywhere-status-menu"
+    context="everywhere-status-menu"
+		style="cursor: pointer"
+		tooltiptext="&status_tooltip.label;" />
+  </statusbar>
+
+  <popupset>
+    <menupopup id='everywhere-status-menu'>
+      <menuitem id="everywhere-status-menu-current-url" label=""/>
+      <menuitem id="everywhere-status-menu-preferences" label="&status_menu_preferences.label;"/>
+    </menupopup>
+  </popupset>
+
+  <menu id="tools-menu">
+    <menupopup id="menu_ToolsPopup">
+      <menu class="menu-iconic" id="everywhere-tool-menu" label="&status_tooltip.label;" image="chrome://conceptualizercontextual/content/logo-16x16.png" insertafter="devToolsSeparator">
+        <menupopup>
+          <menuitem id="everywhere-preferences"
+                    label="&status_menu_preferences.label;"
+                    oncommand="window.openDialog('chrome://conceptualizercontextual/content/options.xul','','chrome,toolbar')" />
+        </menupopup>
+      </menu>
+    </menupopup>
+  </menu>
+
+</overlay>

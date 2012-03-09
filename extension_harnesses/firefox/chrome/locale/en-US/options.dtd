@@ -1,0 +1,8 @@
+<!ENTITY options_window_title "Tweetbeat ConceptualizerHarness Settings">
+<!ENTITY enable_notifications.label "Enable Notifications">
+<!ENTITY blacklist.label "Configure Blacklist Hostname/Domains">
+<!ENTITY blacklist_input.label "Add a Hostname/Domain">
+<!ENTITY blacklist_add.label "Add">
+<!ENTITY blacklist_remove.label "Remove">
+<!ENTITY blacklist_instructions "ConceptualizerHarness does not run when you are on a &quot;https&quot; page or when you are in Private Browsing mode. Add addresses below to additionally skip specific sites. Any domain matching an entry below will be skipped. (For example, adding &quot;.edu&quot; will mean not running on any .edu sites.)">
+<!ENTITY notification_instructions "ConceptualizerHarness shows a toaster notification in the upper right corner of a page when it thinks there are tweets by the key subject on the page.">

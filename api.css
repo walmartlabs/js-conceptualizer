@@ -1,0 +1,104 @@
+#FH_sandbox,#FH_sandbox ABBR,#FH_sandbox ACRONYM,#FH_sandbox ADDRESS,#FH_sandbox B,#FH_sandbox BIG,#FH_sandbox BLOCKQUOTE,#FH_sandbox CAPTION,#FH_sandbox CENTER,#FH_sandbox CITE,#FH_sandbox CODE,#FH_sandbox DD,#FH_sandbox DIV,#FH_sandbox DL,#FH_sandbox DT,#FH_sandbox EM,#FH_sandbox EMBED,#FH_sandbox FONT,#FH_sandbox FORM,#FH_sandbox H1,#FH_sandbox H2,#FH_sandbox H3,#FH_sandbox H4,#FH_sandbox H5,#FH_sandbox H6,#FH_sandbox I,#FH_sandbox IFRAME,#FH_sandbox IMG,#FH_sandbox LABEL,#FH_sandbox LEGEND,#FH_sandbox LI,#FH_sandbox MAP,#FH_sandbox OBJECT,#FH_sandbox OL,#FH_sandbox P,#FH_sandbox PRE,#FH_sandbox SMALL,#FH_sandbox SPAN,#FH_sandbox STRIKE,#FH_sandbox STRONG,#FH_sandbox SUB,#FH_sandbox SUP,#FH_sandbox TABLE,#FH_sandbox TBODY,#FH_sandbox TD,#FH_sandbox TFOOT,#FH_sandbox TH,#FH_sandbox THEAD,#FH_sandbox TR,#FH_sandbox TT,#FH_sandbox U,#FH_sandbox UL,#FH_sandbox a,#FH_sandbox a:link,#FH_sandbox a:hover,#FH_sandbox a:visited,#FH_sandbox a:active{border:0px;background:transparent none;color:#424242;padding:0px;text-align:left;font:normal medium serif}
+#FH_sandbox DIV,#FH_sandbox TABLE,#FH_sandbox TR,#FH_sandbox TH,#FH_sandbox TD{height:auto;width:auto; }
+#FH_sandbox,#FH_sandbox *{border-collapse:collapse;margin:0px;font:normal normal normal 12px/normal;text-transform:none;text-decoration:none;clear:none;cursor:auto;float:none;outline:none;letter-spacing:normal;word-spacing:normal;text-indent:0px;white-space:normal;vertical-align:baseline}
+#FH_sandbox TD{vertical-align:bottom}
+#FH_sandbox span,#FH_sandbox img{display:inline;}
+#FH_sandbox p,#FH_sandbox div{display:block;font: 12px 'Helvetica', sans-serif;}
+#FH_sandbox ul,#FH_sandbox ol{padding-left:20px}
+#FH_sandbox a,#FH_sandbox a:link,#FH_sandbox a:hover,#FH_sandbox a:visited,#FH_sandbox a:active{display:inline;color:blue;text-decoration:underline;cursor:pointer}
+#FH_sandbox a:visited{color:purple}
+#FH_sandbox a:active{color:red}
+#FH_sandbox input{width:auto;border:0px;background:transparent none} 
+
+#FH_sandbox .FH_popup {
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0 0 10px 0 #aaa;
+  -moz-border-top-colors: #fff #ededed #ededed #ededed #ededed;
+  -moz-border-bottom-colors: #fff #ededed #ededed #ededed #ededed;
+  -moz-border-left-colors: #fff #ededed #ededed #ededed #ededed;
+  -moz-border-right-colors: #fff #ededed #ededed #ededed #ededed;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 0 #aaa;
+  -webkit-border-top-colors: #fff #ededed #ededed #ededed #ededed;
+  -webkit-border-bottom-colors: #fff #ededed #ededed #ededed #ededed;
+  -webkit-border-left-colors: #fff #ededed #ededed #ededed #ededed;
+  -webkit-border-right-colors: #fff #ededed #ededed #ededed #ededed;
+  position: absolute;
+  background: #FFFFFF;
+  border: 6px solid #ededed;
+  clear: both;
+  padding: 10px;
+  background: -moz-linear-gradient(center top , #fff, #ededed) repeat scroll 0% 0% #fff;
+  z-index:2147483646;
+}
+
+#FH_sandbox .FH_popup_arrow_inner {
+  position: relative;
+  left: 1px;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border: 5px solid #ededed;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#FH_sandbox .FH_popup_border {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #ff0000;
+}
+
+#FH_sandbox .FH_popup_arrow_outer {
+  position: absolute; 
+  height: 24px; 
+  width: 60px; 
+  overflow: hidden;
+}
+#FH_sandbox .FH_popup_arrow_shadow {
+  position: absolute;
+  top: 16px;
+  left: 6px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  -moz-transform: rotate(45deg);
+  -moz-box-shadow: 0 0 10px 0 #aaa;
+  -webkit-transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 10px 0 #aaa;
+  transform: rotate(45deg);
+}
+
+#FH_sandbox .FH_popup_header {
+  position: relative; 
+  font: bold 11px 'Helvetica', sans-serif;
+  height: 18px;
+}
+
+#FH_sandbox .FH_popup_arrow_container {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 60px; 
+  height: 30px;
+  overflow: hidden;
+}
+
+#FH_sandbox .FH_it_close_button {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  background-color: #a9a9a9;
+  cursor: pointer;
+  padding: 1px;
+  text-align: center;
+  width: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}

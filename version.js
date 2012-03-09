@@ -1,0 +1,1 @@
+var ConceptualizerEverywhereVersion = "@VERSION@";
